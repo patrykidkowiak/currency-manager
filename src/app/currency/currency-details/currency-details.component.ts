@@ -36,7 +36,7 @@ export class CurrencyDetailsComponent implements OnInit, OnChanges {
           datasets: [
             {
               data: mid,
-              borderColor: '#ffcc00',
+              borderColor: '#333333',
               fill: false
             },
           ]
