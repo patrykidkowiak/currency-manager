@@ -10,7 +10,7 @@ import {CurrencyService} from './currency/currency.service';
 export class AppComponent implements OnChanges, OnInit {
   title = 'CurrencyApp';
   listOfOptions = ['USD', 'THB', 'AUD', 'HKD', 'CAD', 'NZD', 'SGD', 'EUR', 'HUF',
-    'CHF', 'GPB', 'UAH', 'JPY', 'CZK', 'DKK', 'ISK', 'NOK', 'SEK', 'HRK',];
+    'CHF', 'GBP', 'UAH', 'JPY', 'CZK', 'DKK', 'ISK', 'NOK', 'SEK', 'HRK',];
 
   selectedCurrency: Currency;
   selectedCurrencyCode: string;

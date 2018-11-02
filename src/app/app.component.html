@@ -1,12 +1,12 @@
-<div class="container justify-content-center">
-  <div class="row text-center">
-    <div class="col-7 border rounded p-2 bg-secondary text-white">
+<div class="container">
+  <div class="row text-center justify-content-center">
+    <div class="col-11 border rounded p-2 bg-secondary text-white">
       <h1 style="font-size:5vw;"><i class="fas fa-comments-dollar fa-1x"></i>  {{title}}</h1>
     </div>
   </div>
 
-  <div class="row align-items-center">
-    <div class="col-7 border rounded p-2 bg-secondary">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-11 border rounded p-2 bg-secondary">
       <select class="form-control" ngModel="selectedOption" (change)="onSelect($event.target.value)">
         <option>Choose a currency</option>
         <option *ngFor="let option of listOfOptions">

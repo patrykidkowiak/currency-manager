@@ -12,17 +12,10 @@ export class CurrencyDetailsComponent implements OnInit, OnChanges {
 
   @Input() currency: Currency;
 
-  chartShowed: boolean;
-
   chart = [];
 
   constructor(private currencyService: CurrencyService) {
   }
-
-  hideChardVoid() {
-    this.chart = null;
-  }
-
 
   showChartVOid() {
     this.currencyService.getCurrencyHistory(this.currency.code).subscribe(res => {
@@ -55,17 +48,15 @@ export class CurrencyDetailsComponent implements OnInit, OnChanges {
           }
         }
       });
-      this.chartShowed = true;
     });
   }
 
   ngOnInit() {
+    this.showChartVOid();
   }
 
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (this.chartShowed === true) {
       this.showChartVOid();
-    }
   }
 }
