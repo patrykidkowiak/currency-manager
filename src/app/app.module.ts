@@ -1,16 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {CurrencyDetailsComponent} from './currency/currency-details/currency-details.component';
+import {HttpClientModule} from '@angular/common/http';
+import {CurrencyService} from './currency/currency.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrencyDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CurrencyService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
