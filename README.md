@@ -1,6 +1,6 @@
 # CurrencyApp!
 
-This is a project of Currency Manager, to check actual currency rate and its history.
+This is a project of Currency Manager, to check current currency rate and its history.
 
 All information is getting from NBP API.
 
